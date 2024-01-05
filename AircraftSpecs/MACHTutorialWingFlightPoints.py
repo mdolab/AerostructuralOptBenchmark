@@ -1,8 +1,8 @@
 """
 ==============================================================================
-Definition of Boeing 717 flight points
+Definition of MACH Tutorial wing flight points
 ==============================================================================
-@File    :   Boeing717FlightPoints.py
+@File    :   MACHTutorialWingFlightPoints.py
 @Date    :   2023/10/05
 @Author  :   Alasdair Christison Gray
 @Description :

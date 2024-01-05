@@ -14,8 +14,8 @@ class FlightPoint(AeroProblem):
             Flight point load factor (how many G's the aircraft is pulling)
         fuelFraction : float
             What fraction of the total fuel mass is the aircraft carrying at this flight point
-        failureGroups : _type_
-            _description_
+        failureGroups : list of strings
+            Names of wingbox component groups for which to compute a failure constraint value at this flight point
         """
         super().__init__(name=name, **kwargs)
 

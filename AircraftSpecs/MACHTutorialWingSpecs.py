@@ -1,11 +1,30 @@
+"""
+==============================================================================
+MACH Tutorial wing aircraft and mission specifications
+==============================================================================
+@File    :   MACHTutorialWingSpecs.py
+@Date    :   2023/10/05
+@Author  :   Alasdair Christison Gray
+@Description :
+"""
+
+# ==============================================================================
+# Standard Python modules
+# ==============================================================================
 import sys
 import os
-import numpy as np
 
+# ==============================================================================
+# External Python modules
+# ==============================================================================
+import numpy as np
 import openmdao.api as om
 from openconcept.aerodynamics import ParasiteDragCoefficient_JetTransport
 
-from Boeing717FlightPoints import standardCruise
+# ==============================================================================
+# Extension modules
+# ==============================================================================
+from MACHTutorialWingFlightPoints import standardCruise
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../geometry"))
 from wingGeometry import wingGeometry  # noqa: E402
@@ -47,7 +66,7 @@ CLIMB_ANGLE = np.arctan(standardCruise.altitude / CLIMB_RANGE)  # radians
 MAX_WING_LOADING = 650.0  # kg/m^2 Max allowable wing loading
 
 # ==============================================================================
-# Drag estimate
+# Airframe drag estimate
 # ==============================================================================
 fuselageLaminarFrac = 0.05  # Raymer table 12.4
 tailLaminarFrac = 0.1  # Raymer table 12.4
