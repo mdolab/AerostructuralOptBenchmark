@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this model, please cite it as below."
 authors:
-- family-names: "C. Gray"
-  given-names: "Alasdair"
+- family-names: "Gray"
+  given-names: "Alasdair C."
   orcid: "https://orcid.org/0000-0003-0213-2763"
-- family-names: "R. R. A. Martins"
-  given-names: "Joaquim"
+- family-names: "Martins"
+  given-names: "Joaquim R. R. A."
   orcid: "https://orcid.org/0000-0003-2143-1478"
 title: "MACH Tutorial Wing Repository"
 version: 0.0.1
@@ -14,11 +14,11 @@ url: "https://github.com/mdolab/AerostructuralOptBenchmark"
 preferred-citation:
   type: conference
   authors:
-  - family-names: "C. Gray"
-    given-names: "Alasdair"
+  - family-names: "Gray"
+    given-names: "Alasdair C."
     orcid: "https://orcid.org/0000-0003-0213-2763"
-  - family-names: "R. R. A. Martins"
-    given-names: "Joaquim"
+  - family-names: "Martins"
+    given-names: "Joaquim R. R. A."
     orcid: "https://orcid.org/0000-0003-2143-1478"
   doi: "10.2514/6.2024-2775"
   name: "AIAA SciTech Forum"
