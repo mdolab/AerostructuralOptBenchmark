@@ -21,7 +21,7 @@ preferred-citation:
     given-names: "Joaquim"
     orcid: "https://orcid.org/0000-0003-2143-1478"
   doi: "10.2514/6.2024-2775"
-  booktitle: "AIAA SciTech Forum"
+  name: "AIAA SciTech Forum"
   title: "A Proposed Benchmark Model for Practical Aerostructural Optimization of Aircraft Wings"
-  month: 1
+  month: "January"
   year: 2024
