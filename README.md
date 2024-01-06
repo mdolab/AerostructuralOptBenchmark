@@ -2,7 +2,7 @@
 
 This repo contains files related to the "MACH Tutorial Wing", a proposed benchmark model for the high-fidelity aeroelastic optimization community.
 
-For more details on the wing model and the corresponding benchmark optimization problems, see our paper "A Proposed Benchmark Model for Practical Aeroelastic Optimization of Aircraft Wings".
+For more details on the wing model and the corresponding benchmark optimization problems, see our paper ["A Proposed Benchmark Model for Practical Aeroelastic Optimization of Aircraft Wings"](https://www.researchgate.net/publication/377154425_A_Proposed_Benchmark_Model_for_Practical_Aeroelastic_Optimization_of_Aircraft_Wings).
 
 If you use this model and/or the benchmark problems in your research, please cite the paper, a bibtex entry is provided in `CITATION.bib`.
 
