@@ -8,6 +8,8 @@ Currently, there are 3 mesh levels available for the wing:
 - **L2 - 1.0m cells:** Medium grid, for optimizations
 - **L3 - 180k cells:** Coarse grid, for debugging
 
+Thanks to Anil Yildirim for creating these meshes.
+
 ## File descriptions:
 
 - **`wing_surf_S1.cgns`:** Level 1 surface mesh of the wing
