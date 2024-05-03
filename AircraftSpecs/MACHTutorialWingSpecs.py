@@ -63,7 +63,7 @@ CLIMB_RANGE = (
 CLIMB_ANGLE = np.arctan(standardCruise.altitude / CLIMB_RANGE)  # radians
 
 # --- Misc specs ---
-MAX_WING_LOADING = 650.0  # kg/m^2 Max allowable wing loading
+MAX_WING_LOADING = 600.0  # kg/m^2 Max allowable wing loading
 
 # ==============================================================================
 # Airframe drag estimate
