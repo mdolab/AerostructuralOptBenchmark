@@ -13,3 +13,5 @@ Currently, there are 3 mesh levels available for the wing:
 - **`wing_surf_S1.cgns`:** Level 1 surface mesh of the wing
 - **`genVolMesh.py`:** Python script for extruding volume meshes using [pyHyp](github.com/mdolab/pyhyp)
 - **`ExtrudeMeshes.sh`:** Bash script which will run `genVolMesh.py` for you to generate the family of volume meshes
+
+If you are unable to build and run pyHyp yourself, you can find the volume mesh files [here]([url](https://www.dropbox.com/scl/fo/ojletuhei39ffgs5v533o/AB-m56MjepwyGicBvgX1ERo?rlkey=a6p1idmqpw6u3wa5cfdsten8e&dl=0)).
