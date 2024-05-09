@@ -24,7 +24,7 @@ from openconcept.aerodynamics import ParasiteDragCoefficient_JetTransport
 # ==============================================================================
 # Extension modules
 # ==============================================================================
-from MACHTutorialWingFlightPoints import standardCruise
+from .MACHTutorialWingFlightPoints import standardCruise
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../geometry"))
 from wingGeometry import wingGeometry  # noqa: E402
