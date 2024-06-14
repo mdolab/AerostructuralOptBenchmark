@@ -2,7 +2,7 @@
 ==============================================================================
 Definition of MACH Tutorial wing flight points
 ==============================================================================
-@File    :   MACHTutorialWingFlightPoints.py
+@File    :   STWFlightPoints.py
 @Date    :   2023/10/05
 @Author  :   Alasdair Christison Gray
 @Description :
@@ -58,7 +58,7 @@ seaLevelLowSpeedPullUp = FlightPoint(
     failureGroups=["l_skin", "u_skin", "spar", "rib"],
     mach=MANEUVER_MACH,
     altitude=MANEUVER_ALTITUDE,
-    alpha=10.037,
+    alpha=10.3,
     evalFuncs=["lift", "drag", "cl", "cd"],
 )
 
@@ -69,7 +69,7 @@ seaLevelLowSpeedPushDown = FlightPoint(
     failureGroups=["l_skin"],
     mach=MANEUVER_MACH,
     altitude=MANEUVER_ALTITUDE,
-    alpha=-5.5,
+    alpha=-6.4,
     evalFuncs=["lift", "drag", "cl", "cd"],
 )
 

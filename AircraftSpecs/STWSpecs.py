@@ -2,7 +2,7 @@
 ==============================================================================
 MACH Tutorial wing aircraft and mission specifications
 ==============================================================================
-@File    :   MACHTutorialWingSpecs.py
+@File    :   STWSpecs.py
 @Date    :   2023/10/05
 @Author  :   Alasdair Christison Gray
 @Description :
@@ -24,7 +24,7 @@ from openconcept.aerodynamics import ParasiteDragCoefficient_JetTransport
 # ==============================================================================
 # Extension modules
 # ==============================================================================
-from .MACHTutorialWingFlightPoints import standardCruise
+from .STWFlightPoints import standardCruise
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../geometry"))
 from wingGeometry import wingGeometry  # noqa: E402

@@ -526,8 +526,8 @@ class AircraftPerformanceGroup(om.Group):
 # Test the performance group derivatives
 if __name__ == "__main__":
 
-    from AircraftSpecs.MACHTutorialWingSpecs import aircraftSpecs
-    from AircraftSpecs.MACHTutorialWingFlightPoints import flightPointSets
+    from AircraftSpecs.STWSpecs import aircraftSpecs
+    from AircraftSpecs.STWFlightPoints import flightPointSets
 
     aircraftSpecs["cruiseSpeed"] = 200.0
     aircraftSpecs["dynPressure"] = 0.5 * 1.225 * aircraftSpecs["cruiseSpeed"] ** 2
