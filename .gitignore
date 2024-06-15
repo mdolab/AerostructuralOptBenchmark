@@ -1,3 +1,6 @@
+# Ignore DVGeo demo files
+geometry/DVGeoDemo
+
 # Ignore tar files
 *.tar
 *.tar.gz
