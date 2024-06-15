@@ -157,6 +157,7 @@ wingGeometry["chordIndex"] = chordIndex
 wingGeometry["verticalIndex"] = verticalIndex
 wingGeometry["wing"] = {
     "semiSpan": semiSpan,
+    "sectionEta": sectionEta,
     "sectionChord": sectionChord,
     "sectionChordwiseOffset": sectionChordwiseOffset,
     "sectionVerticalOffset": sectionVerticalOffset,
