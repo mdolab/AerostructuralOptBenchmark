@@ -19,7 +19,7 @@ Definition of MACH Tutorial wing flight points
 # ==============================================================================
 # Extension modules
 # ==============================================================================
-from .FlightPoint import FlightPoint
+from FlightPoint import FlightPoint
 
 # ==============================================================================
 # Cruise conditions
