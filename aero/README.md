@@ -1,6 +1,6 @@
 # Aerodynamic meshes
 
-**Important:** These meshes are not the ones used in our original paper (hope they're better). You can find the original meshes in the [v0.0.1 release of this repo](https://github.com/mdolab/AerostructuralOptBenchmark/tree/v0.0.1/aero).
+**Important:** These meshes are not the ones used in our original paper (hopefully they're higher quality). You can find the original meshes in the [v0.0.1 release of this repo](https://github.com/mdolab/AerostructuralOptBenchmark/tree/v0.0.1/aero).
 
 Currently, there are 3 mesh levels available for the wing:
 
