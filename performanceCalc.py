@@ -203,7 +203,7 @@ class MidSegmentMassComp(om.ExplicitComponent):
 
 
 def computeCorrectedDrag(drag, extraDragCoeff, wingArea, dynPressure):
-    return drag + 1 / 2 * extraDragCoeff * wingArea * dynPressure
+    return drag + extraDragCoeff * wingArea * dynPressure
 
 
 # --- Lift and drag calculations ---
@@ -525,15 +525,24 @@ class AircraftPerformanceGroup(om.Group):
 
 # Test the performance group derivatives
 if __name__ == "__main__":
+    import os
+    import sys
 
-    from AircraftSpecs.STWSpecs import aircraftSpecs
-    from AircraftSpecs.STWFlightPoints import flightPointSets
-
-    aircraftSpecs["cruiseSpeed"] = 200.0
-    aircraftSpecs["dynPressure"] = 0.5 * 1.225 * aircraftSpecs["cruiseSpeed"] ** 2
+    sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../AircraftSpecs"))
+    from AircraftSpecs.STWSpecs import aircraftSpecs  # noqa: E402
+    from AircraftSpecs.STWFlightPoints import flightPointSets  # noqa: E402
 
     prob = om.Problem()
     prob.model = AircraftPerformanceGroup(aircraftSpecs=aircraftSpecs, flightPoints=flightPointSets["3pt"])
     prob.setup()
+    # Set some reasonable input values
+    prob.set_val("wingboxMass", 1000.0, units="kg")
+    prob.set_val("wingboxVolume", 6.0, units="m**3")
+    prob.set_val("wingArea", aircraftSpecs["refArea"], units="m**2")
+    for fp in flightPointSets["3pt"]:
+        prob.set_val(f"{fp.name}Lift", fp.loadFactor * aircraftSpecs["refMTOW"] * 9.81 / 2.0)
+    prob.set_val("cruiseDrag", aircraftSpecs["refMTOW"] * 9.81 / 2.0 / 20)
+    prob.run_model()
+    prob.model.list_outputs()
     prob.check_partials(compact_print=True, form="central", step=1e-6)
     om.n2(prob, show_browser=True)
