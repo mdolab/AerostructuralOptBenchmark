@@ -57,9 +57,7 @@ TECoords[:, verticalIndex] = sectionVerticalOffset - sectionChord * np.sin(np.de
 rootChord = sectionChord[0]
 tipChord = sectionChord[1]
 planformArea = semiSpan * (rootChord + tipChord) * 0.5
-meanAerodynamicChord = planformArea * (
-    (2.0 / 3.0) * (rootChord + tipChord - rootChord * tipChord / (rootChord + tipChord))
-)
+meanAerodynamicChord = (2.0 / 3.0) * (rootChord + tipChord - rootChord * tipChord / (rootChord + tipChord))
 aspectRatio = 2 * (semiSpan**2) / planformArea
 taperRatio = tipChord / rootChord
 
