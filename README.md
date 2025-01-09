@@ -1,4 +1,4 @@
-# MACH Tutorial Wing Repository
+# Simple Transonic Wing Repository
 
 This repo contains files related to the "Simple Transonic Wing", a proposed benchmark model for the high-fidelity aeroelastic optimization community.
 
